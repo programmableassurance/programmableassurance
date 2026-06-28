@@ -89,13 +89,13 @@ The fundamental problem from 1960s control theory remained unsolved in organizat
 
 ---
 
-## 2026 — Programmable Assurance
+## Emerging Discipline — Programmable Assurance
 
-**The problem being solved:** Organizations define intent in one place, execute it somewhere else, measure it somewhere else, and explain it nowhere. The gap between governance intent and governance outcomes is where every breach, every compliance failure, and every accountability crisis lives.
+**The problem this discipline addresses:** Organizations define intent in one place, execute it somewhere else, measure it somewhere else, and explain it nowhere. The gap between governance intent and governance outcomes is where every breach, every compliance failure, and every accountability crisis lives.
 
 **The insight:** Governance must be executable, continuous, accountable, and closed-loop — regardless of topology, regardless of domain, regardless of whether the governed thing is a Terraform plan, a procurement approval, or a board-level risk acceptance.
 
-**What this gives us:**
+**What this discipline proposes:**
 
 ```
 Intent              carried into the control
@@ -109,6 +109,10 @@ Economics           financial translation for every audience
 **The continuity:** Programmable Assurance inherits everything that came before — control theory's feedback loop, GRC's vocabulary, Policy-as-Code's executability, platform engineering's developer-native approach — and assembles them into a complete governance operating model.
 
 It is not a revolution. It is a completion.
+
+:::note
+Programmable Assurance is an emerging discipline. This history represents one framing of its intellectual lineage — not an established consensus.
+:::
 
 ---
 
