@@ -67,7 +67,7 @@ The discipline extends to any domain where organizational intent can be translat
 
 ## Relationship to Adjacent Disciplines
 
-| Discipline | What it does | What PA adds |
+| Discipline | What it does | What Programmable Assurance (PA) adds |
 |------------|-------------|--------------|
 | Policy-as-Code | Makes rules executable | Feedback loop, economics, accountability, multi-audience translation |
 | GRC | Documents compliance posture | Continuous enforcement, pre-execution governance |
