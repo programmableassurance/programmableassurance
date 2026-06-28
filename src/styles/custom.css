@@ -1,0 +1,210 @@
+/*
+ * programmableassurance.org — academic light theme
+ * ─────────────────────────────────────────────────
+ * Design intent: standards documentation, not SaaS
+ * Reference: OWASP, Rust-lang, Python.org, MDN
+ *
+ * pa-design-tokens.css v1.0
+ * Sync with: programmableassurance.dev, obsidianwall.dev
+ * Future: extract into pa-theme npm package
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* ── Starlight color overrides ── */
+:root {
+  --sl-font:              'Inter', system-ui, sans-serif;
+  --sl-font-mono:         'IBM Plex Mono', 'Fira Code', monospace;
+
+  --sl-color-accent-low:  #dbeafe;
+  --sl-color-accent:      #1d4ed8;
+  --sl-color-accent-high: #1e3a8a;
+
+  --sl-color-white:       #ffffff;
+  --sl-color-gray-1:      #f8fafc;
+  --sl-color-gray-2:      #f1f5f9;
+  --sl-color-gray-3:      #e2e8f0;
+  --sl-color-gray-4:      #94a3b8;
+  --sl-color-gray-5:      #64748b;
+  --sl-color-gray-6:      #475569;
+  --sl-color-black:       #0f172a;
+
+  /* Gold accent for belief statements */
+  --pa-gold:              #d97706;
+  --pa-gold-bg:           #fffbeb;
+  --pa-gold-border:       #fbbf24;
+
+  /* Content width */
+  --sl-content-width:     50rem;
+}
+
+/* ── Dark mode — minimal, still academic ── */
+:root[data-theme='dark'] {
+  --sl-color-accent-low:  #1e3a5f;
+  --sl-color-accent:      #60a5fa;
+  --sl-color-accent-high: #93c5fd;
+}
+
+/* ── Typography ── */
+.sl-markdown-content {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.sl-markdown-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.sl-markdown-content h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--sl-color-gray-3);
+}
+
+.sl-markdown-content h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--sl-color-accent);
+  margin-top: 2rem;
+}
+
+/* ── Blockquotes — used for canonical definitions ── */
+.sl-markdown-content blockquote {
+  border-left: 3px solid var(--sl-color-accent);
+  background: var(--sl-color-gray-1);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+  font-style: normal;
+}
+
+.sl-markdown-content blockquote p {
+  font-size: 1.05rem;
+  color: var(--sl-color-black);
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ── Belief statement callout ── */
+.belief {
+  background: var(--pa-gold-bg);
+  border: 1px solid var(--pa-gold-border);
+  border-left: 4px solid var(--pa-gold);
+  padding: 1rem 1.5rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1.5rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #92400e;
+  font-style: italic;
+}
+
+/* ── Tables ── */
+.sl-markdown-content table {
+  font-size: 0.9rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.sl-markdown-content th {
+  background: var(--sl-color-gray-2);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid var(--sl-color-gray-3);
+}
+
+.sl-markdown-content td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--sl-color-gray-3);
+  vertical-align: top;
+}
+
+/* ── Code blocks ── */
+.sl-markdown-content code {
+  font-size: 0.875em;
+  background: var(--sl-color-gray-2);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+
+/* ── Implementation cards ── */
+.impl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.impl-card {
+  border: 1px solid var(--sl-color-gray-3);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.impl-card:hover {
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 0 0 1px var(--sl-color-accent-low);
+}
+
+.impl-card-name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--sl-color-black);
+}
+
+.impl-card-status {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.impl-card-status.active  { color: #16a34a; }
+.impl-card-status.future  { color: var(--sl-color-gray-4); }
+
+.impl-card-desc {
+  font-size: 0.875rem;
+  color: var(--sl-color-gray-6);
+  line-height: 1.5;
+}
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--sl-color-gray-3);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--sl-color-gray-5);
+  margin-top: 4rem;
+}
+
+.site-footer a {
+  color: var(--sl-color-accent);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .impl-grid {
+    grid-template-columns: 1fr;
+  }
+}

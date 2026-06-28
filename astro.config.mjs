@@ -17,55 +17,44 @@ export default defineConfig({
       favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css'],
 
-      social: [
-        {
-          icon: 'github',
+      social: [ 
+
+        { icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/programmableassurance',
-        },
+          href: 'https://github.com/programmableassurance', }
       ],
 
       sidebar: [
         {
           label: 'The Discipline',
           items: [
-            { label: 'What Is Programmable Assurance?', slug: 'definition' },
-            { label: 'Manifesto',                       slug: 'manifesto' },
-            { label: 'Four Principles',                 slug: 'principles' },
-            { label: 'Founding Insight',                slug: 'founding-insight' },
-            { label: 'History',                         slug: 'history' },
+            { label: 'What Is Programmable Assurance?', link: '/definition' },
+            { label: 'Manifesto',                       link: '/manifesto' },
+            { label: 'Four Principles',                 link: '/principles' },
+            { label: 'Founding Insight',                link: '/founding-insight' },
+            { label: 'History',                         link: '/history' },
           ],
         },
         {
           label: 'Category Language',
           items: [
-            { label: 'Vocabulary',   slug: 'vocabulary' },
-            { label: 'Category Map', slug: 'category-map' },
+            { label: 'Vocabulary',   link: '/vocabulary' },
+            { label: 'Category Map', link: '/category-map' },
           ],
         },
         {
           label: 'Knowledge',
           items: [
-            { label: 'Research',  slug: 'research' },
-            { label: 'News',      slug: 'news' },
+            { label: 'Research',  link: '/research' },
+            { label: 'News',      link: '/news' },
           ],
         },
         {
           label: 'Ecosystem',
           items: [
-            { label: 'Implementations', slug: 'implementations' },
-            { label: 'About',           slug: 'about' },
+            { label: 'Implementations', link: '/implementations' },
+            { label: 'About',           link: '/about' },
           ],
-        },
-      ],
-
-      head: [
-        {
-          tag: 'link',
-          attrs: {
-            rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap',
-          },
         },
       ],
     }),
