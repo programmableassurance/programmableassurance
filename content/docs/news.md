@@ -1,40 +1,29 @@
 ---
-title: Research
-description: Papers, articles, and thought pieces on Programmable Assurance and governance engineering.
+title: News
+description: Announcements and updates from the Programmable Assurance ecosystem.
 sidebar:
-  order: 1
+  order: 2
 ---
 
-Research, papers, and thought pieces on Programmable Assurance are collected here.
+## June 2026
 
----
+**programmableassurance.org launched**  
+*June 2026*
 
-## Articles
-
-### Defining Programmable Assurance
-*Ash I. — June 1, 2026*
-
-The original definition of Programmable Assurance — the discipline of expressing organizational intent as executable, verifiable, explainable, and continuously enforceable governance logic.
-
-[Read on dev.to →](https://dev.to/aisha_ow/defining-programmable-assurance-3675)
+The canonical home of the Programmable Assurance discipline is now live. This site defines the category, its vocabulary, principles, and relationship to adjacent disciplines.
 
 ---
 
-### Why I Rewrote the Definition of Programmable Assurance
-*Ash I. — June 23, 2026*
+**ObsidianWall Verdict v0.5.0 ships**  
+*June 18, 2026*
 
-A more complete definition — why the original was too narrow, what the behavioral argument is, and where the category boundary sits.
+The first platform implementing Programmable Assurance ships v0.5.0 with seven CLI commands, four analyzer domains, compliance coverage mapping, and a policy simulation engine.
 
-[Read on dev.to →](https://dev.to/aisha_ow)
-
----
-
-## Contributing Research
-
-Have you written about Programmable Assurance, governance engineering, or related disciplines?
-
-[Open a pull request →](https://github.com/programmableassurance/org) to add your work to this page.
+[Read more at obsidianwall.com →](https://obsidianwall.com)
 
 ---
 
-*This page will grow as the discipline grows.*
+**programmableassurance.org and .dev domains acquired**  
+*June 2026*
+
+The Programmable Assurance category now has dedicated domain homes — establishing the discipline independently of any single implementation.
