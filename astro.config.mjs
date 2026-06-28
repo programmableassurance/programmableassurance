@@ -15,7 +15,6 @@ export default defineConfig({
       },
 
       favicon: '/favicon.svg',
-
       customCss: ['./src/styles/custom.css'],
 
       social: [
@@ -31,15 +30,24 @@ export default defineConfig({
           label: 'The Discipline',
           items: [
             { label: 'What Is Programmable Assurance?', slug: 'definition' },
-            { label: 'The Founding Insight',            slug: 'founding-insight' },
+            { label: 'Manifesto',                       slug: 'manifesto' },
             { label: 'Four Principles',                 slug: 'principles' },
+            { label: 'Founding Insight',                slug: 'founding-insight' },
+            { label: 'History',                         slug: 'history' },
           ],
         },
         {
           label: 'Category Language',
           items: [
-            { label: 'Vocabulary',     slug: 'vocabulary' },
-            { label: 'Category Map',   slug: 'category-map' },
+            { label: 'Vocabulary',   slug: 'vocabulary' },
+            { label: 'Category Map', slug: 'category-map' },
+          ],
+        },
+        {
+          label: 'Knowledge',
+          items: [
+            { label: 'Research',  slug: 'research' },
+            { label: 'News',      slug: 'news' },
           ],
         },
         {
@@ -52,27 +60,6 @@ export default defineConfig({
       ],
 
       head: [
-        {
-          tag: 'meta',
-          attrs: {
-            property: 'og:title',
-            content: 'Programmable Assurance',
-          },
-        },
-        {
-          tag: 'meta',
-          attrs: {
-            property: 'og:description',
-            content: 'The discipline of continuously aligning organizational intent with outcomes.',
-          },
-        },
-        {
-          tag: 'link',
-          attrs: {
-            rel: 'preconnect',
-            href: 'https://fonts.googleapis.com',
-          },
-        },
         {
           tag: 'link',
           attrs: {
