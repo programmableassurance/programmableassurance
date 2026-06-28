@@ -6,19 +6,32 @@ Open framework, reference architecture, specifications, and educational resource
 Source for [programmableassurance.org](https://programmableassurance.org) —
 the canonical home of the Programmable Assurance discipline.
 
+---
+
+**Nothing on this site requires ObsidianWall to be true.**
+
+**Everything built on ObsidianWall assumes Programmable Assurance is true.**
+
+---
+
 ## What Is Programmable Assurance?
 
 Programmable Assurance is the discipline of continuously aligning
 organizational intent with outcomes through executable governance,
 accountability, evidence, and feedback.
 
+The belief behind the discipline:
+
+> Intent should align with outcomes.
+
 ## This Site
 
 This site defines the Programmable Assurance category — its principles,
-vocabulary, scope, and relationship to adjacent disciplines.
+vocabulary, scope, history, and relationship to adjacent disciplines.
 
-Nothing on this site requires ObsidianWall to be true.
-Everything on ObsidianWall's sites assumes Programmable Assurance is true.
+Programmable Assurance is an open discipline. Any platform, tool, or
+framework can implement it. [ObsidianWall](https://obsidianwall.com)
+is the first known implementation.
 
 ## Development
 
@@ -33,8 +46,7 @@ Deployed to Vercel. Pushes to `main` deploy automatically.
 
 ## Contributing
 
-This is a living specification. Contributions welcome.
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+This is a living specification. Contributions welcome via pull request.
 
 ## License
 
