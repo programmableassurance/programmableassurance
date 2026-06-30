@@ -9,7 +9,7 @@ description: Platforms and tools implementing Programmable Assurance. Programmab
 The discipline exists independently of any single platform. Any tool, framework, or platform can implement Programmable Assurance. ObsidianWall is the first known commercial implementation.
 :::
 
-Programmable Assurance is an open discipline. Any platform, tool, or framework can implement it.
+Programmable Assurance is an open discipline. Any platform, tool, or framework can implement it — but listing here is reviewed, not automatic. See [Submitting an Implementation](#submitting-an-implementation) below.
 
 This page lists known implementations.
 
@@ -43,23 +43,44 @@ ObsidianWall starts in the infrastructure domain — pre-deployment governance f
 
 ## Open Source Implementations
 
-*None listed yet. [Submit a pull request](https://github.com/programmableassurance/org) to add yours.*
+*None listed yet.*
 
 ---
 
 ## Research Implementations
 
-*None listed yet. [Submit a pull request](https://github.com/programmableassurance/org) to add yours.*
+*None listed yet.*
 
 ---
 
-## Add an Implementation
+## What Qualifies as an Implementation
 
-If you are building a platform, tool, or framework that implements Programmable Assurance, open a pull request to add it here.
+Listing on this page is not self-service. A tool is not "implementing Programmable Assurance" simply because it claims to — it must demonstrate the principles with public, inspectable evidence.
 
-Requirements for listing:
-- Implements at least two of the four principles
-- Has public documentation
-- Is available for others to use or evaluate
+Two tiers:
 
-[GitHub →](https://github.com/programmableassurance/org)
+**Compatible with Programmable Assurance** — Demonstrably implements at least one of the four principles, with public documentation or code showing the actual mechanism (not just a marketing claim).
+
+**Implements Programmable Assurance** — Demonstrably implements all four principles, each with verifiable evidence:
+
+1. **Intent must be executable** — show the executable policy format
+2. **Enforcement must be continuous** — show it runs at decision-time, not only in periodic audits
+3. **Every decision must be accountable** — show the audit artifact or attribution record structure
+4. **Outcomes must feed back into intent** — show the feedback mechanism connecting observed outcomes back to policy
+
+Most existing Policy-as-Code and GRC tools will qualify for the first tier but not the second — that is expected. The second tier is intentionally a higher bar.
+
+---
+
+## Submitting an Implementation
+
+Every submission is reviewed before listing. There is no automatic process.
+
+To submit:
+
+1. Email <a href="mailto:hello&#64;programmableassurance&#46;org">the team</a> with your tool name, public documentation link, and — for each principle you believe your tool satisfies — a specific link to the documentation or code showing the mechanism, not just a description.
+2. The submission is reviewed against the criteria above.
+3. If approved, you'll be listed at the appropriate tier with a short summary, in the style of the ObsidianWall entry above.
+4. Listings may be revisited or removed if the evidence becomes stale or no longer accurate — this is not a permanent badge.
+
+You can also open an issue at the [programmableassurance GitHub organization](https://github.com/programmableassurance/programmableassurance) if you prefer.
