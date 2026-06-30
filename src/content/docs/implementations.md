@@ -3,7 +3,7 @@ title: Implementations
 description: Platforms and tools implementing Programmable Assurance. Programmable Assurance is an open discipline — ObsidianWall is the first known implementation, not the definition of the discipline itself.
 ---
 
-:::caution[Important distinction]
+:::note[Discipline vs. implementation]
 **Programmable Assurance is a discipline. ObsidianWall is an implementation of it. These are not the same thing.**
 
 The discipline exists independently of any single platform. Any tool, framework, or platform can implement Programmable Assurance. ObsidianWall is the first known commercial implementation.
