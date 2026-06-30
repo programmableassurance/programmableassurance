@@ -12,7 +12,7 @@ Research, papers, and thought pieces on Programmable Assurance are collected her
 ## Articles
 
 ### Defining Programmable Assurance
-*Ash I. — June 1, 2026*
+*Aisha Ibrahim — June 1, 2026*
 
 The original definition of Programmable Assurance — the discipline of expressing organizational intent as executable, verifiable, explainable, and continuously enforceable governance logic.
 
@@ -21,7 +21,7 @@ The original definition of Programmable Assurance — the discipline of expressi
 ---
 
 ### Why I Rewrote the Definition of Programmable Assurance
-*Ash I. — June 23, 2026*
+*Aisha Ibrahim — June 23, 2026*
 
 A more complete definition — why the original was too narrow, what the behavioral argument is, and where the category boundary sits.
 
