@@ -49,6 +49,6 @@ Everything built on ObsidianWall assumes Programmable Assurance is true.
 
 This site is open source. Contributions to vocabulary, principles, research, history, and the category map are welcome.
 
-[GitHub →](https://github.com/programmableassurance/org)
+[GitHub →](https://github.com/programmableassurance/)
 
 Content is licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
