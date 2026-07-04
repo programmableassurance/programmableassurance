@@ -11,6 +11,32 @@ This page answers that question for each adjacent discipline.
 
 ---
 
+## The Evolution of Governance
+
+Every major governance discipline solved the problem left unsolved by the one before it.
+
+```
+        GRC
+Defines governance intent
+            │
+            ▼
+   Policy-as-Code
+Makes governance executable
+            │
+            ▼
+Programmable Assurance
+Continuously aligns intent with outcomes
+through accountability, evidence, and feedback
+```
+
+GRC defined what governance should look like.
+Policy-as-Code made some of it executable.
+Programmable Assurance closes the loop — making governance intent continuously enforceable, accountable, and self-correcting through feedback.
+
+Each category solved something the previous one left open. Programmable Assurance is not a replacement for what came before. It is the next step in the same progression.
+
+---
+
 ## The Short Answer
 
 Programmable Assurance is not a replacement for any of the disciplines below.
@@ -57,14 +83,13 @@ GRC tells you what the rules are. Programmable Assurance ensures the rules are o
 | | Policy-as-Code | Programmable Assurance |
 |--|----------------|------------------------|
 | Primary question | Did the rule pass? | Should this happen, and who is accountable? |
-| Output | true / false | Typed five-level decision with attribution |
-| Business context | None | Intent, obligation, financial consequence |
+| Output | true / false | Typed governance decision with attribution |
+| Business context | None | Intent and obligation carried into the decision |
 | Audience | Engineers | Developers, CISOs, budget owners, boards, auditors |
 | Evidence | CI/CD log | Immutable audit artifact |
 | Feedback loop | None | Outcomes refine intent |
-| Economics | None | Financial exposure translation |
 
-**Relationship:** Policy-as-Code solves enforcement. Programmable Assurance solves governance — which includes enforcement, accountability, evidence, economics, and feedback.
+**Relationship:** Policy-as-Code solves enforcement. Programmable Assurance solves governance — which includes enforcement, accountability, evidence, and feedback.
 
 Policy-as-Code is a component inside a Programmable Assurance implementation. It is not the same thing.
 
@@ -141,25 +166,32 @@ Programmable Assurance applied to AI governance means AI workload controls are e
 
 ## The Positioning Map
 
+Where each discipline sits on two dimensions — when governance runs and how it is expressed:
+
 ```
-                    RETROSPECTIVE
-                         │
-         GRC ────────────┼──────── Traditional Audit
-                         │
-  DOCUMENT  ─────────────┼─────────────────── EXECUTABLE
-  DRIVEN    │            │                    │
-            │   Policy-  │                    │
-            │   as-Code  │                    │
-            │            │    Programmable    │
-            │            │    Assurance       │
-            │            │                    │
-                         │
-                    CONTINUOUS
+                           Retrospective
+                                ▲
+                                │
+                    GRC         ●
+                                │
+                                │
+                                │
+                                │         Policy-as-Code
+                                │                ●
+                                │
+                                │
+                                │                        Programmable
+                                │                        Assurance ●
+                                ▼
+                           Continuous
+          Document-driven ─────────────────────────────► Executable
 ```
 
-Most existing tools are retrospective, document-driven, or enforce without closing the loop.
+GRC is document-driven and retrospective — it defines what governance should look like and measures compliance after the fact.
 
-Programmable Assurance occupies the continuous, executable quadrant — with accountability and feedback connecting the others.
+Policy-as-Code moved governance into the executable column — rules run automatically — but remained point-in-time. It checks once at deployment and goes silent.
+
+Programmable Assurance sits in the continuous, executable quadrant. Executable because intent is expressed as code that runs. Continuous because it runs at every relevant decision point, not just once.
 
 ---
 
