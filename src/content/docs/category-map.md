@@ -13,7 +13,7 @@ This page answers that question for each adjacent discipline.
 
 ## The Evolution of Governance
 
-Every major governance discipline solved the problem left unsolved by the one before it.
+Each of these disciplines addresses a different aspect of organizational governance. Together they illustrate the progression from defining governance intent, to executing governance, to continuously aligning intent with outcomes.
 
 ```
         GRC
