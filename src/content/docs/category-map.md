@@ -11,29 +11,17 @@ This page answers that question for each adjacent discipline.
 
 ---
 
-## The Evolution of Governance
+## Programmable Assurance and Adjacent Disciplines
 
-Each of these disciplines addresses a different aspect of organizational governance. Together they illustrate the progression from defining governance intent, to executing governance, to continuously aligning intent with outcomes.
+Programmable Assurance is not a replacement for 
+the disciplines below. It is the behavioral model 
+that connects them — making their controls 
+executable, their decisions accountable, and their 
+outcomes connected back to the intent that 
+produced them.
 
-```
-        GRC
-Defines governance intent
-            │
-            ▼
-   Policy-as-Code
-Makes governance executable
-            │
-            ▼
-Programmable Assurance
-Continuously aligns intent with outcomes
-through accountability, evidence, and feedback
-```
+![Programmable Assurance category map](/pa-category-map.svg)
 
-GRC defined what governance should look like.
-Policy-as-Code made some of it executable.
-Programmable Assurance closes the loop — making governance intent continuously enforceable, accountable, and self-correcting through feedback.
-
-Each category solved something the previous one left open. Programmable Assurance is not a replacement for what came before. It is the next step in the same progression.
 
 ---
 
