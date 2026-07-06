@@ -1,211 +1,415 @@
 ---
 title: Programmable Assurance Vocabulary
-description: The canonical language of the Programmable Assurance discipline — Level 1 foundational concepts and Level 2 category concepts.
+description: The canonical language of the Programmable Assurance discipline — foundational beliefs, core ontology, and behavioral concepts.
 ---
 
 This page defines the canonical vocabulary of the Programmable Assurance discipline.
 
-Terms are organized into two levels. Level 1 covers foundational beliefs and problems. Level 2 covers how the discipline operates. Implementation-specific terminology belongs to individual implementations, not the discipline.
+The vocabulary is organized into three levels.
+
+- **Level 1** establishes the foundational beliefs and problems.
+- **Level 2** defines the core ontology of the discipline.
+- **Level 3** defines the behavioral concepts that emerge from applying Programmable Assurance.
+
+Implementation-specific terminology belongs to individual implementations, not the discipline.
 
 ---
 
-## Level 1 — Foundational Concepts
+# Level 1 — Foundational Concepts
 
 The beliefs and problems that Programmable Assurance is built to address.
 
 ---
 
-### The Alignment Principle
+## The Alignment Principle
 
 **Intent should align with outcomes.**
 
 The foundational belief of Programmable Assurance. Organizations should be able to continuously verify that what they intend is reflected in what actually happens.
 
 Analogous to:
+
 - Zero Trust: *"Never trust, always verify."*
 - Infrastructure as Code: *"Treat infrastructure like software."*
 - Programmable Assurance: *"Intent should align with outcomes."*
 
 ---
 
-### The Intent-Reality Gap
+## The Intent-Reality Gap
 
-The gap between organizational intent and operational reality. The core problem Programmable Assurance exists to close.
+The gap between organizational intent and operational reality.
 
-**Example:** An MFA policy is written and published to a policy portal. An identity platform enforces authentication. Those two systems have no awareness of each other. The policy existed. The enforcement existed. The gap between them — unverified, unrecorded, unaccountable — is where the breach lives.
+The core problem Programmable Assurance exists to close.
+
+**Example**
+
+An MFA policy is written and published to a policy portal. An identity platform enforces authentication.
+
+Those two systems have no awareness of each other.
+
+The policy existed.
+
+The enforcement existed.
+
+The gap between them—unverified, unrecorded, and unaccountable—is where the breach lives.
 
 Every governance failure lives in the Intent-Reality Gap.
 
 ---
 
-### Governance Fragmentation
+## Governance Fragmentation
 
-The structural condition in which the systems that define, enforce, and audit governance have no shared awareness, accountability, or evidence layer.
+The structural condition in which the systems that define, enforce, observe, and audit governance have no shared awareness, accountability, or evidence layer.
 
-Governance Fragmentation is the cause of the Intent-Reality Gap. The Intent-Reality Gap is the symptom. Governance Fragmentation is the disease.
+Governance Fragmentation is the cause of the Intent-Reality Gap.
 
-**Distinction:** The Intent-Reality Gap describes *what happens* when governance fails. Governance Fragmentation describes *why* it happens.
+The Intent-Reality Gap is the symptom.
 
-**Example:** Intent lives in SharePoint. Policy lives in Azure Policy. Enforcement lives in Entra ID. Evidence lives in Azure Monitor. None of those systems know what the others have decided.
+Governance Fragmentation is the disease.
+
+**Example**
+
+Intent lives in SharePoint.
+
+Policy lives in Azure Policy.
+
+Enforcement lives in Entra ID.
+
+Evidence lives in Azure Monitor.
+
+None of those systems know what the others have decided.
 
 ---
 
-### The Governability Boundary
+## The Governability Boundary
 
 The boundary between what governance can influence and what it cannot.
 
-Programmable Assurance governs organizational decisions, systems, responses, evidence, and accountability structures — not human free will.
+Programmable Assurance governs organizational decisions, systems, responses, evidence, and accountability structures—not human free will.
 
-A harassment incident cannot be prevented by software. But the investigation workflow, the evidence chain, the accountability record, and the organizational response absolutely can be governed.
+A harassment incident cannot be prevented by software.
 
----
-
-## Level 2 — Category Concepts
-
-How Programmable Assurance operates as a discipline.
+The investigation workflow, evidence chain, accountability record, and organizational response absolutely can.
 
 ---
 
-### The Four Principles
+# Level 2 — Core Ontology
 
-The behavioral requirements for any system implementing Programmable Assurance:
-
-1. **Intent must be executable** — Governance that exists only as a document is aspiration, not governance.
-2. **Enforcement must be continuous** — Annual audits measure the past. Governance must run at the speed of change.
-3. **Every decision must be accountable** — Named person, named policy, named date. Always.
-4. **Outcomes must feed back into intent** — Governance that does not learn eventually becomes wrong.
-
-See [Four Principles](/principles) for the full treatment.
+The canonical objects that exist inside every implementation of Programmable Assurance.
 
 ---
 
-### Executable Governance
+## Governance Intent
 
-Governance that can actively influence, constrain, verify, or record the behavior it governs. The opposite of governance that exists only as documentation.
+The organizational objective, obligation, policy, standard, or principle that expresses how decisions should be made.
 
-Governance becomes executable when intent is translated into a form that can run at the moment a relevant decision occurs — not months later during an audit.
+Governance intent exists independently of implementation technology.
 
----
+It may originate from:
 
-### Continuous Enforcement
-
-Governance that operates at every relevant decision point rather than periodically. Transforms audits from discovery events into confirmation events.
-
-When enforcement is continuous, an auditor confirms what the system already knows. When enforcement is periodic, an auditor discovers what the system missed.
-
----
-
-### Accountable Decision
-
-A governance decision attributed to a named person, a named policy, and a named date. Cannot be anonymous. Cannot be reconstructed from memory later.
-
-The accountability record connects intent to decision to outcome. Without it, governance becomes theater. With it, governance becomes defensible.
+- Regulations
+- Corporate policy
+- Security standards
+- Legal obligations
+- Business objectives
 
 ---
 
-### The Assurance Feedback Loop
+## Governance Decision
 
-The mechanism through which observed outcomes continuously inform and refine governance intent. Prevents governance drift.
+The atomic unit of governance.
 
-```
+A Governance Decision records whether a governed action is:
+
+- Allowed
+- Denied
+- Approved
+- Overridden
+- Escalated
+- Risk Accepted
+
+together with the intent, evidence, accountability, and context that produced it.
+
+Unlike a policy evaluation or audit log, a Governance Decision is a durable governance artifact.
+
+---
+
+## Governance Outcome
+
+The observed operational result produced by a Governance Decision.
+
+Examples include:
+
+- Deployment completed
+- Deployment denied
+- Exception approved
+- Risk accepted
+- Policy violated
+- Incident occurred
+
+Governance Outcomes determine whether organizational reality remained aligned with governance intent.
+
+---
+
+## Governance Evidence
+
+The evidence supporting or produced by a Governance Decision.
+
+Evidence may include:
+
+- Infrastructure state
+- Deployment artifacts
+- Policy evaluations
+- Audit logs
+- Approval records
+- Cryptographic attestations
+
+Governance Evidence allows governance decisions to be independently verified.
+
+---
+
+## Governance Artifact
+
+Any durable object produced by governance execution.
+
+Examples include:
+
+- Governance Decisions
+- Approval records
+- Override records
+- Evidence bundles
+- Governance reports
+
+Governance Artifacts become the historical memory of governance.
+
+---
+
+## Governance Runtime
+
+The environment in which executable governance continuously evaluates organizational decisions.
+
+Unlike a traditional policy engine, a Governance Runtime produces:
+
+- Decisions
+- Evidence
+- Accountability
+- Observations
+
+---
+
+## Governance Compiler
+
+The process that transforms governance intent into executable governance behavior.
+
+A Governance Compiler translates policies, standards, regulations, or business obligations into executable governance logic.
+
+It separates governance authorship from governance execution.
+
+---
+
+## Governance Telemetry
+
+Continuous observations describing how governance behaves over time.
+
+Unlike security telemetry, Governance Telemetry measures the health of governance itself.
+
+Examples include:
+
+- Decision latency
+- Override frequency
+- Policy evaluation frequency
+- Governance drift
+- Exception trends
+- Control effectiveness
+
+Governance Telemetry feeds the Assurance Feedback Loop.
+
+---
+
+## Governance Observation
+
+The continuous collection of governance outcomes after decisions occur.
+
+Observation differs from enforcement.
+
+Enforcement determines what should happen.
+
+Observation determines what actually happened.
+
+Observation provides the data required for continuous alignment.
+
+---
+
+## Governance Feedback
+
+Information derived from Governance Observations that modifies future Governance Intent.
+
+Feedback closes the Assurance Feedback Loop.
+
+Without feedback, governance eventually drifts from organizational reality.
+
+---
+
+# Level 3 — Behavioral Concepts
+
+The behaviors that emerge when governance becomes programmable.
+
+---
+
+## The Four Principles
+
+Every implementation of Programmable Assurance satisfies four behavioral requirements:
+
+1. **Intent must be executable**
+2. **Enforcement must be continuous**
+3. **Every decision must be accountable**
+4. **Outcomes must feed back into intent**
+
+See [Four Principles](/principles) for the complete treatment.
+
+---
+
+## Executable Governance
+
+Governance capable of influencing, constraining, verifying, or recording behavior at the moment a relevant decision occurs.
+
+Governance becomes executable when intent is translated into a form that can run—not months later during an audit.
+
+---
+
+## Continuous Enforcement
+
+Governance operating continuously rather than periodically.
+
+When enforcement is continuous, audits confirm what the system already knows.
+
+When enforcement is periodic, audits discover what the system missed.
+
+---
+
+## The Assurance Feedback Loop
+
+The mechanism through which observed outcomes continuously refine governance intent.
+
+```text
 Intent
-  ↓
+    ↓
 Governance Decision
-  ↓
-Operational Outcome
-  ↓
-Observation
-  ↓
-Feedback
-  ↓
+    ↓
+Governance Outcome
+    ↓
+Governance Observation
+    ↓
+Governance Feedback
+    ↓
 Refined Intent
-  ↓
+    ↓
 [loop continues]
+````
+
+---
+
+## Governance Drift
+
+The condition in which organizational reality diverges from governance intent without detection.
+
+Governance Drift is caused by missing or ineffective feedback.
+
+Controls may be functioning perfectly while governance itself drifts away from organizational reality.
+
+---
+
+## Governance Translation
+
+The rendering of one governance event in the language of every affected stakeholder simultaneously.
+
+The same Governance Decision may become:
+
+* Exit code for a developer
+* Financial exposure for a budget owner
+* Audit artifact for a CISO
+* Liability record for legal counsel
+* Governance summary for a board
+
+Governance Translation ensures every stakeholder receives the information they need—in the language they understand.
+
+---
+
+## Governance Economics
+
+The financial translation of governance gaps and governance decisions into measurable organizational exposure.
+
+Examples include:
+
+```text
+Control violation   →  $3.4M HIPAA exposure
+
+Missing coverage    →  $850K regulatory exposure
+
+Risk acceptance     →  Documented financial liability
 ```
 
----
-
-### Governance Drift
-
-The condition in which organizational reality has diverged from governance intent without detection. Caused by the absence of the Assurance Feedback Loop.
-
-Governance drift is not a failure of enforcement. It is a failure of feedback. Controls can be enforced correctly while governance intent drifts away from organizational reality.
+Governance Economics makes governance visible to executive leadership.
 
 ---
 
-### Governance Translation
+## Technical Risk
 
-The rendering of a single governance event in the language of every affected stakeholder simultaneously.
+Risk produced by infrastructure findings.
 
-The same governance decision carries different meaning for different audiences:
+Technical Risk measures infrastructure posture.
 
-- Exit code for a developer
-- Financial exposure for a budget owner
-- Audit artifact for a CISO
-- Risk acceptance record for a board
-
-Governance Translation ensures each audience receives the information they need to act — in the form they can act on.
+It does **not** measure governance posture.
 
 ---
 
-### Governance Economics
+## Governance Risk
 
-The financial translation of governance gaps and decisions into quantifiable organizational exposure.
+Risk produced by governance intent and organizational obligations.
 
-```
-Control violation    →  $3.4M HIPAA exposure
-Missing coverage     →  $850K–$7.25M aggregate risk
-Override decision    →  Documented liability acceptance
-```
+A deployment may have Technical Risk of **0** while Governance Risk remains **Critical**.
 
-Governance Economics makes the cost of governance visible — and the cost of governance failure undeniable.
+These are independent dimensions.
 
 ---
 
-### Technical Risk
+## The Intent-Reality Gap Cycle
 
-Risk produced by infrastructure findings, measured 0–100. Aggregated from open ingress rules, unencrypted databases, public storage, cost overruns, and similar findings.
+The recurring pattern by which traditional governance reproduces misalignment.
 
-**Critical distinction:** A deployment can have Technical Risk of 0 and Governance Risk of Critical simultaneously. These are separate dimensions.
-
----
-
-### Governance Risk
-
-Risk produced by policy intent and organizational obligations — independent of technical findings.
-
-A governance denial at Technical Risk 0 means a governance condition failed, not that infrastructure is misconfigured. The infrastructure may be technically sound while still violating an organizational governance obligation.
-
----
-
-### The Intent-Reality Gap Cycle
-
-The recurring pattern by which governance systems reproduce the Intent-Reality Gap when they lack the Assurance Feedback Loop:
-
-```
+```text
 Policy written
-  ↓
+      ↓
 Control implemented separately
-  ↓
+      ↓
 Audit completed periodically
-  ↓
-Gap discovered after the fact
-  ↓
-Incident or breach
-  ↓
+      ↓
+Gap discovered
+      ↓
+Incident
+      ↓
 [cycle repeats]
 ```
 
-Programmable Assurance breaks this cycle.
+Programmable Assurance exists to break this cycle.
 
 ---
 
-### Governance Communication Artifact
+## Governance Communication Artifact
 
-A governance decision that carries with it not just the rule and the result, but the full context: the reason the policy exists, the obligation it satisfies, the financial consequence of the decision, the owner accountable for it, and the authorized path forward.
+A Governance Decision carrying not only the outcome, but also:
 
-A governance communication artifact does not just block or allow. It communicates — carrying intent from the policy author to the engineer to the auditor to the board, in each stakeholder's language.
+* Governing intent
+* Policy rationale
+* Accountability
+* Evidence
+* Financial consequence
+* Authorized path forward
+
+A Governance Communication Artifact does not merely allow or deny.
+
+It communicates governance across technical, operational, financial, legal, and executive audiences simultaneously.
 
 ---
 
-*Implementation-specific vocabulary — Verdict, Sentinel, Compass, Forge, the Two-Plane Doctrine, and other ObsidianWall concepts — lives at [obsidianwall.dev/concepts/vocabulary](https://obsidianwall.dev/concepts/vocabulary).*
+*Implementation-specific vocabulary—including Verdict, Sentinel, Compass, Forge, and other ObsidianWall concepts—lives on [ObsidianWall documentation](https://obsidianwall.dev/concepts/vocabulary).*
