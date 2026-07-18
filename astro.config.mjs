@@ -36,6 +36,16 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Framework',
+          items: [
+            { label: 'The Programmable Assurance Framework, link: '/docs/framework/index' },
+            { label: 'Foundations',                       link: '/docs/framework/foundations' },
+            { label: 'Four Principles',                 link: '/principles' },
+            { label: 'Founding Insight',                link: '/founding-insight' },
+            { label: 'History',                         link: '/history' },
+          ],
+        },
+        {
           label: 'Category Language',
           items: [
             { label: 'Vocabulary',   link: '/vocabulary' },
