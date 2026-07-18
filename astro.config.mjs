@@ -36,7 +36,7 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Framework',
+          label: 'The Framework',
           items: [
             { label: 'The Programmable Assurance Framework, link: '/docs/framework/index' },
             { label: 'Foundations',                       link: '/docs/framework/foundations' },
