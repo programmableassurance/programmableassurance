@@ -36,13 +36,14 @@ export default defineConfig({
           ],
         },
         {
-          label: 'The Framework',
+          label: 'Framework',
           items: [
-            { label: 'The Programmable Assurance Framework, link: '/docs/framework/index' },
-            { label: 'Foundations',                       link: '/docs/framework/foundations' },
-            { label: 'Four Principles',                 link: '/principles' },
-            { label: 'Founding Insight',                link: '/founding-insight' },
-            { label: 'History',                         link: '/history' },
+            { label: 'Introduction',                     link: '/framework/introduction' },
+            { label: 'Part I - Foundations',              link: '/framework/part-i-foundations'},
+            { label: 'Part II - Operating Model',         link: '/framework/part-ii-operating-model' },
+           //{label: 'Part III - Continuous Assurance',   link: '/framework/part-iii-continuous-assurance' },
+           // { label:  'Part IV - Applying the Framework',  link: '/framework/part-iv-applying-the-framework' },
+           // { label: 'Conclusion',                       link: '/framework/conclusion' },
           ],
         },
         {

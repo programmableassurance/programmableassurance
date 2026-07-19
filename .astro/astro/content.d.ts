@@ -235,6 +235,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
+"part-i-foundations.md": {
+	id: "part-i-foundations.md";
+  slug: "part-i-foundations";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
 };
 
 	};
